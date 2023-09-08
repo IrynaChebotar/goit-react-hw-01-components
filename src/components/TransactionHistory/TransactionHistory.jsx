@@ -1,24 +1,29 @@
+import { Wrapper } from "./Transaction.styled";
+import { Title } from "./Transaction.styled";
+import { Description } from "./Transaction.styled";
+import { Item } from "./Transaction.styled";
+
 export function TransactionHistory ({transactions}) {
 return (
     <>
-        <table >
-  <thead>
+        <Wrapper >
+  <Title>
     <tr>
       <th>Type</th>
       <th>Amount</th>
       <th>Currency</th>
     </tr>
-  </thead>
-  <tbody>
+  </Title>
+  <Description>
     {transactions.map(transaction => (
     <tr key={transaction.id}>
-    <td>{transaction.type}</td>
-    <td>{transaction.amount}</td>
-    <td>{transaction.currency}</td>
+    <Item>{transaction.type}</Item>
+    <Item>{transaction.amount}</Item>
+    <Item>{transaction.currency}</Item>
   </tr>
     ))}
-  </tbody>
-</table>
+  </Description>
+</Wrapper>
     </>
 );
 };
