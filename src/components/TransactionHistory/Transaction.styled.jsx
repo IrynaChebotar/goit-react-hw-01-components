@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.table`
   width: 50%;
-  height: 200px;
+  height: 150px;
   margin-top: 40px;
   margin-bottom: 40px;
   margin-left: auto;
