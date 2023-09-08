@@ -1,5 +1,5 @@
 import { FriendListItem } from "./FriendsListItem";
-import { Wrapper } from './FriendList.style';
+import { Wrapper } from './FriendList.styled';
 
 export function FriendList ({friends}) {
 return (

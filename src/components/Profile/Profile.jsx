@@ -1,7 +1,12 @@
+import { Wrapper } from './Profile.styled';
+import { Description } from './Profile.styled';
+import { Item } from './Profile.styled';
+import { List } from './Profile.styled';
+
 export function Profile ({username, tag, location, avatar, stats}) {
     return(
-        <div>
-  <div>
+        <Wrapper>
+  <Description>
     <img
       src= {avatar}
       alt= {`${username}`}
@@ -9,22 +14,22 @@ export function Profile ({username, tag, location, avatar, stats}) {
     <p>{username}</p>
     <p>@{tag}</p>
     <p>{location}</p>
-  </div>
+  </Description>
 
-  <ul>
-    <li>
+  <Item>
+    <List>
       <span>Followers</span>
       <span>{stats.followers}</span>
-    </li>
-    <li>
+    </List>
+    <List>
       <span>Views</span>
       <span>{stats.views}</span>
-    </li>
-    <li>
+    </List>
+    <List>
       <span>Likes</span>
       <span>{stats.likes}</span>
-    </li>
-  </ul>
-</div>
+    </List>
+  </Item>
+</Wrapper>
     )
 };

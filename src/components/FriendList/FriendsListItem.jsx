@@ -1,6 +1,6 @@
-import { List } from './FriendList.style';
-import { Description } from './FriendList.style';
-import { Status } from './FriendList.style';
+import { List } from './FriendList.styled';
+import { Description } from './FriendList.styled';
+import { Status } from './FriendList.styled';
 
 export function FriendListItem ({avatar, isOnline, name}) {
 return (

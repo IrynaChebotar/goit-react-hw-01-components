@@ -1,24 +1,23 @@
 import styled from 'styled-components';
 
 export const Wrapper = styled.ul`
-  flex-direction: column;
   display: flex;
-  gap: 16px;
-  margin-bottom: 40px;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+  margin-bottom: 50px;
 `;
 export const List = styled.li`
-  border-radius: 20px;
-  width: 450px;
-  background-color: #fff;
-
   display: flex;
-
   align-items: left;
+  width: 350px;
+  background-color: #fff;
+  
   img {
-    padding: 20px;
-    width: 30%;
+    padding: 10px;
+    width: 20%;
   }
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
 `;
 
 export const Status = styled.span`
@@ -28,10 +27,10 @@ export const Status = styled.span`
   &::before {
     content: '';
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
     border-radius: 50%;
-    margin-left: 20px;
     background-color: ${props => (props.$isOnline ? 'green' : 'red')};
   }
 `;
