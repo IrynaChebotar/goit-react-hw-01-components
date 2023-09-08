@@ -1,9 +1,13 @@
+import { List } from './FriendList.style';
+import { Description } from './FriendList.style';
+import { Status } from './FriendList.style';
+
 export function FriendListItem ({avatar, isOnline, name}) {
 return (
-    <li>
-  <span />
-  <img  src={avatar} alt={`${name}`} width="48" />
-  <p>{name}</p>
-</li>
+    <List>
+  <Status $isOnline={isOnline} />
+      <img src={avatar} alt={`${name}`} width="48" />
+      <Description>{name}</Description>
+</List>
 )
 };

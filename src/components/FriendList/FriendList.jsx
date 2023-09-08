@@ -1,8 +1,9 @@
-import { FriendListItem } from "./FriendsListItem"
+import { FriendListItem } from "./FriendsListItem";
+import { Wrapper } from './FriendList.style';
 
 export function FriendList ({friends}) {
 return (
-    <ul>
+    <Wrapper>
     {friends.map(friend => (
           <FriendListItem
           key={friend.id}
@@ -11,6 +12,6 @@ return (
           isOnline={friend.isOnline}
           />
     ))}
-  </ul> 
+  </Wrapper> 
 )
 };
