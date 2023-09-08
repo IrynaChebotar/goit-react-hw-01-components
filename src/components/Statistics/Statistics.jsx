@@ -1,18 +1,22 @@
+import { Wrapper } from "./Statistics.styled";
+import { List } from "./Statistics.styled";
+import { Item } from "./Statistics.styled";
+
 export function Statistics ({title, stats}){
     return (
-        <section>
+        <Wrapper>
         {title && <h2>{title}</h2>}
       
-        <ul>
+        <List>
           {stats.map(stat => {
             return(
-                <li key={stat.id}>
+                <Item key={stat.id}>
             <span>{stat.label}</span>
             <span>{stat.percentage}%</span>
-          </li>
-            )
+          </Item>
+            );
           })}
-        </ul>
-      </section>   
-    )
+        </List>
+      </Wrapper>   
+    );
 };

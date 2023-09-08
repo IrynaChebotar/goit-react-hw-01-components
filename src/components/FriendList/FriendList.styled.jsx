@@ -3,13 +3,13 @@ import styled from 'styled-components';
 export const Wrapper = styled.ul`
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: center;
   gap: 20px;
   margin-bottom: 50px;
 `;
 export const List = styled.li`
   display: flex;
-  align-items: left;
+  align-items: center;
   width: 350px;
   background-color: #fff;
   

@@ -6,11 +6,12 @@ export const Wrapper = styled.div`
   width: 500px;
   margin-top: 40px;
   margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   border-radius: 20px;
   border: 2px solid lightgrey;
   background-color: #fff;
-  overflow: hidden;
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 `;
 
