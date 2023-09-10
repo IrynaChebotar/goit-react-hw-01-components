@@ -14,28 +14,30 @@ export const Wrapper = styled.div`
 
 export const List = styled.ul`
   display: flex;
+  padding: 0;
 `;
+
 
 const getColor = props => {
   switch (props.label) {
     case '.docx':
-      return 'blue';
-    case '.pdf':
       return 'purple';
+    case '.pdf':
+      return 'tomato';
     case '.mp3':
-      return 'red';
+      return 'coral';
     case '.psd':
-      return 'green';
+      return 'yellow';
     default:
-      return 'blue';
+      return 'red';
   }
 };
 
 export const Item = styled.li`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-  padding: 25px;
-  background-color: ${props => getColor(props)};
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 25px;
+background-color: ${getColor};
 `;

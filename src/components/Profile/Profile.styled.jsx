@@ -25,6 +25,7 @@ export const Description = styled.div`
 `;
 export const Item = styled.ul`
   display: flex;
+  padding: 0;
 `;
 
 export const List = styled.li`

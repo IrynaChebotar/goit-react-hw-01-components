@@ -1,7 +1,7 @@
 import { FriendListItem } from "./FriendsListItem";
 import { Wrapper } from './FriendList.styled';
 
-export function FriendList ({friends}) {
+export default function FriendList ({friends}) {
 return (
     <Wrapper>
     {friends.map(friend => (

@@ -3,7 +3,7 @@ import { Description } from './Profile.styled';
 import { Item } from './Profile.styled';
 import { List } from './Profile.styled';
 
-export function Profile ({username, tag, location, avatar, stats}) {
+export default function Profile ({username, tag, location, avatar, stats}) {
     return(
         <Wrapper>
   <Description>

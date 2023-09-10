@@ -1,8 +1,8 @@
-import { Wrapper } from "./Statistics.styled";
-import { List } from "./Statistics.styled";
-import { Item } from "./Statistics.styled";
+import { Wrapper } from "./Statistic.styled";
+import { List } from "./Statistic.styled";
+import { Item } from "./Statistic.styled";
 
-export function Statistics ({title, stats}){
+export default function Statistics ({title, stats}){
     return (
         <Wrapper>
         {title && <h2>{title}</h2>}

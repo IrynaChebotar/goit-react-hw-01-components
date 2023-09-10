@@ -3,7 +3,7 @@ import { Title } from "./Transaction.styled";
 import { Description } from "./Transaction.styled";
 import { Item } from "./Transaction.styled";
 
-export function TransactionHistory ({transactions}) {
+export default function TransactionHistory ({transactions}) {
 return (
     <>
         <Wrapper >
