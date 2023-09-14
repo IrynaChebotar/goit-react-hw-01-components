@@ -20,7 +20,6 @@ export const Description = styled.div`
     width: 40%;
     padding: 25px;
     margin: auto;
-    
   }
 `;
 export const Item = styled.ul`

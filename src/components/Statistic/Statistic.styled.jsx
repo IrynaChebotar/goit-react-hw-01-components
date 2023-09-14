@@ -17,7 +17,6 @@ export const List = styled.ul`
   padding: 0;
 `;
 
-
 const getColor = props => {
   switch (props.label) {
     case '.docx':
@@ -34,10 +33,10 @@ const getColor = props => {
 };
 
 export const Item = styled.li`
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
-padding: 25px;
-background-color: ${getColor};
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 25px;
+  background-color: ${getColor};
 `;

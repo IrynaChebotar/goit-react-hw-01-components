@@ -25,7 +25,7 @@ export const Description = styled.tbody`
   tr:nth-child(even) {
     background-color: #f9f9f9;
   }
- tr:nth-child(odd) {
+  tr:nth-child(odd) {
     background-color: #f1dbdb;
- }
+  }
 `;

@@ -12,7 +12,7 @@ export const List = styled.li`
   align-items: center;
   width: 350px;
   background-color: #fff;
-  
+
   img {
     padding: 10px;
     width: 20%;
@@ -38,4 +38,3 @@ export const Status = styled.span`
 export const Description = styled.p`
   text-align: left;
 `;
-
